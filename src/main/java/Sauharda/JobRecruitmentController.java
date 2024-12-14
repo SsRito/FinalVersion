@@ -82,10 +82,10 @@ public class JobRecruitmentController
             Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
 
             FXMLLoader fxmlLoader
-                    = new FXMLLoader(MainApplication.class.getResource("/Sauharda/ceoDashboard.fxml"));
+                    = new FXMLLoader(MainApplication.class.getResource("/Sauharda/hrManagerDashboard.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
 
-            stage.setTitle("CEO Dashboard");
+            stage.setTitle("HR Manager Dashboard");
             stage.setScene(nextScene);
             stage.show();
         }
