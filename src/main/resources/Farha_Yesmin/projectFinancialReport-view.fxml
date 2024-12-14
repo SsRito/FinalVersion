@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e0f2f1;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Farha_Yesmin.ProjectFinancialReportViewController">
+   <children>
+      <Button layoutX="25.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadFinancialReportOnAction" prefHeight="31.0" prefWidth="555.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Load Financial Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="23.0" layoutY="319.0" mnemonicParsing="false" onAction="#returnHomeOnAction" prefHeight="31.0" prefWidth="555.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Return Home">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="projectFinancialReportTableView" layoutX="25.0" layoutY="67.0" prefHeight="242.0" prefWidth="555.0">
+        <columns>
+          <TableColumn fx:id="reportDatePCol" prefWidth="187.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Report Date" />
+          <TableColumn fx:id="dateRangePCol" prefWidth="183.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Date Range" />
+            <TableColumn fx:id="expensePCol" prefWidth="184.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Expense" />
+            <TableColumn fx:id="exoensePCol1" prefWidth="184.0" style="-fx-background-color: #b2dfdb;" text="Expense" />
+        </columns>
+      </TableView>
+      <Button layoutX="25.0" layoutY="356.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="31.0" prefWidth="555.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
