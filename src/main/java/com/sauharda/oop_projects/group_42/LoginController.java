@@ -104,8 +104,4 @@ public class LoginController
         errorAlert.setContentText("Incorrect Email or Password");
         errorAlert.show();
     }
-
-    @javafx.fxml.FXML
-    public void forgetPasswordOnAction(ActionEvent actionEvent) {
-    }
 }
