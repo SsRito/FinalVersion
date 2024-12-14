@@ -26,6 +26,6 @@
             <TableColumn fx:id="deadlineTableColumn" prefWidth="87.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Deadline" />
          </columns>
       </TableView>
-      <Button layoutX="256.0" layoutY="78.0" mnemonicParsing="false" onAction="#refreshTableOnAction" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Refresh Table" />
+      <Button layoutX="260.0" layoutY="78.0" mnemonicParsing="false" onAction="#refreshTableOnAction" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Load Report" />
    </children>
 </AnchorPane>
