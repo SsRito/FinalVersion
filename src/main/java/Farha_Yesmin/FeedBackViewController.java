@@ -5,13 +5,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 
@@ -21,10 +20,17 @@ public class FeedBackViewController
     private TextArea feedBackTextArea;
     @javafx.fxml.FXML
     private ComboBox<String> feedBackCategoryComboBox;
+    ArrayList<FeedBack>feedbackList;
+    @javafx.fxml.FXML
+    private TextField nameTF;
+    @javafx.fxml.FXML
+    private DatePicker dateDatePicker;
 
     @javafx.fxml.FXML
     public void initialize() {
+        feedbackList = new ArrayList<>();
         feedBackCategoryComboBox.getItems().addAll("General FeedBack","Project","Program","Team");
+        dateDatePicker.setValue(LocalDate.now());
     }
 
     @javafx.fxml.FXML
@@ -37,6 +43,12 @@ public class FeedBackViewController
         else{
             showAlert(Alert.AlertType.CONFIRMATION,"Thank you for your feedback");
 
+            feedbackList.add(new FeedBack(nameTF.getText(),
+                    feedBackTextArea.getText(),
+                    dateDatePicker.getValue()
+
+            ));
+
             FileWriter fw = null;
             File f = new File("FeedBack.txt");
             try {
@@ -47,9 +59,9 @@ public class FeedBackViewController
                     fw = new FileWriter(f); //by default false means new file add
                 }
                 String str = "";
-//                for(Budget d: budgetList){
-//                    str += d.toString("budget");
-//                }
+                for(FeedBack d: feedbackList){
+                    str += d.toString("feedback");
+                }
                 fw.write(str);
                 fw.close();
             }
@@ -59,6 +71,7 @@ public class FeedBackViewController
         }
         feedBackCategoryComboBox.setValue(null);
         feedBackTextArea.clear();
+        nameTF.clear();
 
 
 

@@ -8,5 +8,7 @@ module com.sauharda.oop_projects.group_42 {
 
     opens Sauharda to javafx.fxml;
     exports Sauharda;
+    opens Farha_Yesmin to javafx.fxml;
+    exports Farha_Yesmin;
 
 }
