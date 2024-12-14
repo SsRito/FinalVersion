@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sauharda.PartnershipController">
+   <children>
+      <Label layoutX="-1.0" layoutY="-1.0" prefHeight="69.0" prefWidth="606.0" style="-fx-background-color: #80cbc4;" text="      Partnership" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateDatePicker" layoutX="376.0" layoutY="83.0" style="-fx-border-color: #80cbc4;" />
+      <TextField fx:id="companyNameTextField" layoutX="133.0" layoutY="84.0" style="-fx-border-color: #80cbc4;" />
+      <Label layoutX="35.0" layoutY="88.0" text="Company Name:" />
+      <Label layoutX="339.0" layoutY="88.0" text="Date:" />
+      <Label layoutX="35.0" layoutY="121.0" text="Proposal Details:" />
+      <Label layoutX="35.0" layoutY="261.0" text="Status:" />
+      <ComboBox fx:id="statusComboBox" layoutX="81.0" layoutY="257.0" prefWidth="150.0" style="-fx-border-color: #80cbc4;" />
+      <Label layoutX="298.0" layoutY="262.0" text="Proposed Amount:" />
+      <TextField fx:id="proposedAmountTextField" layoutX="405.0" layoutY="257.0" style="-fx-border-color: #80cbc4;" />
+      <Button layoutX="35.0" layoutY="334.0" mnemonicParsing="false" onAction="#goBackToDashboardOnAction" style="-fx-border-color: white; -fx-background-color: #b2dfdb;" text="&lt;- Go Back to Dashboard" />
+      <Button layoutX="422.0" layoutY="334.0" mnemonicParsing="false" onAction="#viewPartnershipDetailsOnAction" style="-fx-border-color: white; -fx-background-color: #b2dfdb;" text="View Partnership Details" />
+      <Button layoutX="257.0" layoutY="334.0" mnemonicParsing="false" onAction="#submitProposalOnAction" prefHeight="28.0" prefWidth="91.0" style="-fx-border-color: white; -fx-background-color: #b2dfdb;" text="Submit" />
+      <TextArea fx:id="proposalDetailsTextArea" layoutX="37.0" layoutY="142.0" prefHeight="104.0" prefWidth="531.0" style="-fx-border-color: #80cbc4;" />
+   </children>
+</AnchorPane>

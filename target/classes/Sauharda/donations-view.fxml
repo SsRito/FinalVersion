@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sauharda.DonationsView">
+   <children>
+      <Label prefHeight="69.0" prefWidth="606.0" style="-fx-background-color: #80cbc4;" text="      Donations" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="31.0" layoutY="347.0" mnemonicParsing="false" onAction="#goBackToDashboardOnAction" style="-fx-border-color: white; -fx-background-color: #b2dfdb;" text="&lt;- Go Back to Dashboard" />
+      <Button layoutX="192.0" layoutY="82.0" mnemonicParsing="false" onAction="#loadDonationReportOnAction" prefHeight="26.0" prefWidth="224.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Load Donation Report" />
+      <TableView fx:id="projectExpenseTableView" layoutX="31.0" layoutY="121.0" prefHeight="200.0" prefWidth="545.0">
+         <columns>
+            <TableColumn fx:id="reportDateTableColumn" prefWidth="173.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Report Date" />
+            <TableColumn fx:id="dateRangeTableColumn" prefWidth="167.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Date Range" />
+            <TableColumn fx:id="donationAmountTableColumn" prefWidth="204.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Donation Amount" />
+         </columns>
+      </TableView>
+      <Button layoutX="405.0" layoutY="347.0" mnemonicParsing="false" onAction="#goBackToFinancePageOnAction" style="-fx-border-color: white; -fx-background-color: #b2dfdb;" text="&lt;- Go Back to Finance Page" />
+   </children>
+</AnchorPane>

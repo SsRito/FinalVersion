@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sauharda.PartnershipDetailsView">
+   <children>
+      <Label prefHeight="69.0" prefWidth="606.0" style="-fx-background-color: #80cbc4;" text="      Partnership Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="46.0" layoutY="347.0" mnemonicParsing="false" onAction="#goBackToDashboardOnAction" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="&lt;- Go Back to Dashboard" />
+      <TableView fx:id="partnershipDetailsTableView" layoutX="10.0" layoutY="131.0" prefHeight="200.0" prefWidth="589.0">
+         <columns>
+            <TableColumn fx:id="companyNameTableColumn" prefWidth="123.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Company Name" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="101.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Date" />
+            <TableColumn fx:id="proposalDetailsTableColumn" prefWidth="189.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Proposal Details" />
+            <TableColumn fx:id="amountTableColumn" prefWidth="88.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Amount" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="87.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Status" />
+         </columns>
+      </TableView>
+      <Button layoutX="256.0" layoutY="86.0" mnemonicParsing="false" onAction="#refreshTableOnAction" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Refresh Table" />
+      <Button layoutX="369.0" layoutY="347.0" mnemonicParsing="false" onAction="#goBackToPartnershipWindowOnAction" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="&lt;- Go Back to Partnership Window" />
+   </children>
+</AnchorPane>

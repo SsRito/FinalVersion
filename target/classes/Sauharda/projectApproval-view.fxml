@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sauharda.ProjectApprovalController">
+    <children>
+        <Label prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #80cbc4;" text="    Projects" textFill="WHITE">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="66.0" text="Project Objective:" />
+        <Label fx:id="projectObjectiveLabel" layoutX="31.0" layoutY="83.0" prefHeight="119.0" prefWidth="534.0" style="-fx-background-color: #fff8de; -fx-border-color: black;" />
+        <Label layoutX="31.0" layoutY="212.0" text="Budget:" />
+        <Label fx:id="budgetLabel" layoutX="31.0" layoutY="229.0" prefHeight="50.0" prefWidth="236.0" style="-fx-background-color: #fff8de; -fx-border-color: black;" />
+        <Label layoutX="329.0" layoutY="212.0" text="Timeline:" />
+        <Label fx:id="timelineLabel" layoutX="329.0" layoutY="229.0" prefHeight="50.0" prefWidth="236.0" style="-fx-background-color: #fff8de; -fx-border-color: black;" />
+        <Button layoutX="31.0" layoutY="296.0" mnemonicParsing="false" onAction="#approveProjectOnAction" prefHeight="28.0" prefWidth="111.0" style="-fx-background-color: #96fa7f; -fx-border-color: #37b81a;" text="Approve" />
+        <Button layoutX="245.0" layoutY="296.0" mnemonicParsing="false" onAction="#requestChangeOnAction" style="-fx-background-color: #ffe74d; -fx-border-color: #b5a11f;" text="Request change " />
+        <Button layoutX="454.0" layoutY="296.0" mnemonicParsing="false" onAction="#rejectProjectOnAction" prefHeight="28.0" prefWidth="111.0" style="-fx-background-color: #fa4925; -fx-border-color: black;" text="Reject" />
+        <Button layoutX="31.0" layoutY="358.0" mnemonicParsing="false" onAction="#backToDashboardOnAction" prefHeight="28.0" prefWidth="236.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="&lt;-  Go Back to Dashboard" />
+    </children>
+</AnchorPane>

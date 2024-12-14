@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sauharda.Feedback">
+   <children>
+      <Label layoutX="-1.0" prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: #80cbc4;" text="    Feedback" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="30.0" layoutY="88.0" mnemonicParsing="false" onAction="#benificiaryFeedbackOnAction" prefHeight="243.0" prefWidth="164.0" style="-fx-background-color: #b2dfdb; -fx-border-color: #00796b;" text="Beneficiary Feedback" textFill="#6f6b6b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="218.0" layoutY="88.0" mnemonicParsing="false" onAction="#donorFeedbackOnAction" prefHeight="243.0" prefWidth="164.0" style="-fx-background-color: #b2dfdb; -fx-border-color: #00796b;" text="Donor Feedback" textFill="#6f6b6b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="405.0" layoutY="88.0" mnemonicParsing="false" onAction="#fieldWorkerFeedbackOnAction" prefHeight="243.0" prefWidth="164.0" style="-fx-background-color: #b2dfdb; -fx-border-color: #00796b;" text="Field Worker Feedback" textFill="#6f6b6b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="221.0" layoutY="350.0" mnemonicParsing="false" onAction="#goBackToDashboardOnAction" style="-fx-background-color: #abc9c6; -fx-border-color: #b2dfdb;" text="&lt;- Go Back to Dashboard" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sauharda.FinanceController">
+   <children>
+      <Label prefHeight="69.0" prefWidth="606.0" style="-fx-background-color: #80cbc4;" text="      Finance" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="224.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBackToDashboardOnAction" style="-fx-border-color: white; -fx-background-color: #b2dfdb;" text="&lt;- Go Back to Dashboard" />
+      <Button layoutX="37.0" layoutY="82.0" mnemonicParsing="false" onAction="#viewMonthlySummaryOnAction" prefHeight="167.0" prefWidth="164.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="View Monthly Summary" />
+      <Button layoutX="221.0" layoutY="82.0" mnemonicParsing="false" onAction="#viewProjectExpenseOnAction" prefHeight="167.0" prefWidth="164.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="View Project Expense" />
+      <Button layoutX="404.0" layoutY="82.0" mnemonicParsing="false" onAction="#viewDonationsOnAction" prefHeight="167.0" prefWidth="164.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="View Donations" />
+      <Button layoutX="37.0" layoutY="260.0" mnemonicParsing="false" onAction="#expenseApprovalOnAction" prefHeight="69.0" prefWidth="531.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Expense Approval" />
+   </children>
+</AnchorPane>
