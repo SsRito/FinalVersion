@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="615.0" style="-fx-background-color: #e0f2f1;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Farha_Yesmin.ReviewBudgetViewController">
+   <children>
+      <Button layoutX="4.0" layoutY="12.0" mnemonicParsing="false" onAction="#loadBudgetPlanOnAction" prefHeight="31.0" prefWidth="608.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Load Budget Plan">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="3.0" layoutY="328.0" mnemonicParsing="false" onAction="#returnHomeOnAction" prefHeight="31.0" prefWidth="608.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Return Home">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="budgetTableView" layoutX="3.0" layoutY="52.0" prefHeight="272.0" prefWidth="608.0">
+        <columns>
+          <TableColumn fx:id="financialPeriodCol" prefWidth="96.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Financial Period" />
+          <TableColumn fx:id="fundraisingBudgetCol" prefWidth="115.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Fundraising Budget" />
+            <TableColumn fx:id="administrationBudgetCol" prefWidth="133.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Administration Budget" />
+            <TableColumn fx:id="projectBudgetCol" prefWidth="93.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Project Budget" />
+            <TableColumn fx:id="salaryBudgetCol" prefWidth="88.0" style="-fx-background-color: #b2dfdb; -fx-border-color: whte;" text="Salary Budget" />
+            <TableColumn fx:id="totalBudgetCol" prefWidth="83.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Total Budget" />
+        </columns>
+      </TableView>
+      <Button layoutX="2.0" layoutY="363.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="31.0" prefWidth="608.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

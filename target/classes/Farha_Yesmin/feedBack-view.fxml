@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e0f2f1;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Farha_Yesmin.FeedBackViewController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #80cbc4;">
+         <children>
+            <Label layoutX="29.0" layoutY="9.0" prefHeight="55.0" prefWidth="357.0" text="FeedBack" textFill="#461a1a">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="36.0" layoutY="108.0" text="FeedBack Category">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="158.0" text="FeedBack Text">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="feedBackCategoryComboBox" layoutX="191.0" layoutY="104.0" prefHeight="26.0" prefWidth="231.0" style="-fx-border-color: #80cbc4; -fx-border-radius: 5; -fx-border-width: 3;" />
+      <TextArea fx:id="feedBackTextArea" layoutX="152.0" layoutY="158.0" prefHeight="82.0" prefWidth="416.0" />
+      <Button layoutX="32.0" layoutY="282.0" mnemonicParsing="false" onAction="#submitOnAction" prefHeight="31.0" prefWidth="539.0" style="-fx-background-color: #80cbc4; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Submit FeedBack">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="334.0" mnemonicParsing="false" onAction="#returnHomeOnAction" prefHeight="31.0" prefWidth="539.0" style="-fx-background-color: #80cbc4; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Return Home">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,12 +1,12 @@
 package Farha_Yesmin;
 
-public class Accountant  {
-    private String name,email,password;
+public class FieldWorker {
+    private String name, email, password;
 
-    public Accountant() {
+    public FieldWorker() {
     }
 
-    public Accountant(String name, String email, String password) {
+    public FieldWorker(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -38,7 +38,7 @@ public class Accountant  {
 
     @Override
     public String toString() {
-        return "Accountant{" +
+        return "FieldWorker{" +
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
