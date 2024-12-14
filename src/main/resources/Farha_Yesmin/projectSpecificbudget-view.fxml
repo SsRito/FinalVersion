@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e0f2f1;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Farha_Yesmin.ProjectSpecificbudgetViewController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-3.0" prefHeight="56.0" prefWidth="606.0" style="-fx-background-color: #80cbc4;">
+         <children>
+            <Label layoutX="16.0" layoutY="3.0" prefHeight="56.0" prefWidth="394.0" text="Track Project Specific Budget" textFill="#611b1b">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="23.0" layoutY="70.0" text="Project Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="112.0" text="Resource Expense">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="158.0" text="Logistics Expense">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="203.0" text="Operational Expense">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ResourceExpenseTextField" layoutX="166.0" layoutY="106.0" prefHeight="30.0" prefWidth="231.0" style="-fx-border-color: #b2dfdb; -fx-border-radius: 5; -fx-border-width: 2;" />
+      <TextField fx:id="logisticsExoenseTextField" layoutX="166.0" layoutY="152.0" prefHeight="30.0" prefWidth="231.0" style="-fx-border-color: #b2dfdb; -fx-border-radius: 5; -fx-border-width: 2;" />
+      <TextField fx:id="operationalExpenseTextField" layoutX="166.0" layoutY="196.0" prefHeight="30.0" prefWidth="231.0" style="-fx-border-color: #b2dfdb; -fx-border-radius: 5; -fx-border-width: 2;" />
+      <Button layoutX="22.0" layoutY="247.0" mnemonicParsing="false" onAction="#trackExpenditureOnAction" prefHeight="31.0" prefWidth="548.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 5;" text="Track Expenditure">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="23.0" layoutY="305.0" text="Total expense Amount">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="350.0" mnemonicParsing="false" onAction="#returnHomeOnAction" prefHeight="31.0" prefWidth="548.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 5;" text="return Home">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="totalExpenseLabel" layoutX="172.0" layoutY="305.0" prefHeight="19.0" prefWidth="166.0" style="-fx-border-color: Red;" />
+      <ComboBox fx:id="projectNameComboBox" layoutX="166.0" layoutY="67.0" prefHeight="26.0" prefWidth="231.0" style="-fx-border-color: #b2dfdb; -fx-border-radius: 5; -fx-border-width: 2;" />
+   </children>
+</AnchorPane>

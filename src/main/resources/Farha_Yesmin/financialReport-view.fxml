@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e0f2f1;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Farha_Yesmin.FinancialReportViewController">
+   <children>
+      <Label layoutX="31.0" layoutY="74.0" text="Report Type">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="120.0" prefHeight="17.0" prefWidth="118.0" text="Date Range">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="reportTypeComboBox" layoutX="150.0" layoutY="71.0" prefHeight="26.0" prefWidth="193.0" />
+      <Line endX="453.5" layoutX="124.0" layoutY="165.0" startX="-100.0" strokeWidth="2.0" />
+      <Label layoutX="32.0" layoutY="209.0" text="Report Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="reportDatePicker" layoutX="149.0" layoutY="205.0" prefHeight="26.0" prefWidth="193.0" />
+      <Label layoutX="32.0" layoutY="251.0" text="Income">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="287.0" text="Expense">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="327.0" text="Donation Amount">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="incomeTextField" layoutX="149.0" layoutY="245.0" prefHeight="26.0" prefWidth="193.0" />
+      <TextField fx:id="expenseTextField" layoutX="150.0" layoutY="283.0" prefHeight="26.0" prefWidth="193.0" />
+      <TextField fx:id="donationAmountTextField" layoutX="150.0" layoutY="323.0" prefHeight="26.0" prefWidth="193.0" />
+      <Button layoutX="406.0" layoutY="326.0" mnemonicParsing="false" onAction="#saveDonationReportOnAction" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Save Donation Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="dateRangeComboBox" layoutX="150.0" layoutY="117.0" prefHeight="26.0" prefWidth="193.0" />
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="57.0" prefWidth="606.0" style="-fx-background-color: #80cbc4;">
+         <children>
+            <Label layoutX="36.0" layoutY="6.0" prefHeight="48.0" prefWidth="352.0" text="Financial Report" textFill="#571f1f">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="405.0" layoutY="173.0" mnemonicParsing="false" onAction="#monthlyReportOnAction" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Monthly Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="405.0" layoutY="210.0" mnemonicParsing="false" onAction="#donationReportOnAction" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Donation Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="405.0" layoutY="248.0" mnemonicParsing="false" onAction="#projectReportOnAction" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Project Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="405.0" layoutY="286.0" mnemonicParsing="false" onAction="#saveMonthlyReportOnAction" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Save Monthly Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="407.0" layoutY="365.0" mnemonicParsing="false" onAction="#saveProjectReportOnAction" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2;" text="Save Project Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
