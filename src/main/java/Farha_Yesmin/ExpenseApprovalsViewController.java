@@ -1,5 +1,6 @@
 package Farha_Yesmin;
 
+import Sauharda.ExpenseApprovalController;
 import com.sauharda.oop_projects.group_42.MainApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -31,10 +32,10 @@ public class ExpenseApprovalsViewController
 
     @javafx.fxml.FXML
     public void submitApprovalOnAction(ActionEvent actionEvent) {
-        //expenseCategoryLabel.setText(expenseCategoryComboBox.setValue());
-       // expenseAmountLabel.setText(expenseAmountTextField.getText());
-       // expenseDateLabel.setText(expenseDatePicker.getValue());
-       // expenseReasonLabel.setText(expenseReasonTextField.getText());
+//        expenseCategoryLabel.setText(expenseCategoryComboBox.setValue());
+//        expenseAmountLabel.setText(expenseAmountTextField.getText());
+//        expenseDateLabel.setText(expenseDatePicker.getValue());
+//        expenseReasonLabel.setText(expenseReasonTextField.getText());
         //ceo fxid
     }
 

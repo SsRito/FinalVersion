@@ -1,5 +1,6 @@
 package Sauharda;
 
+import Farha_Yesmin.ExpenseApprovalsViewController;
 import com.sauharda.oop_projects.group_42.MainApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -12,13 +13,13 @@ import javafx.stage.Stage;
 public class ExpenseApprovalController
 {
     @javafx.fxml.FXML
-    private Label expenseReasonLabel;
+    protected Label expenseReasonLabel;
     @javafx.fxml.FXML
-    private Label expenseDateLabel;
+    protected Label expenseDateLabel;
     @javafx.fxml.FXML
-    private Label expenseAmountLabel;
+    protected Label expenseAmountLabel;
     @javafx.fxml.FXML
-    private Label expenseCategoryLabel;
+    protected Label expenseCategoryLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -71,7 +72,7 @@ public class ExpenseApprovalController
 
     @javafx.fxml.FXML
     public void approveOnAction(ActionEvent actionEvent) {
-        //approvalLabel.setText("Approved");
+       // approvalLabel.setText("Approved");
 
         Alert confirmAlert = new Alert(Alert.AlertType.CONFIRMATION);
         confirmAlert.setContentText("Approved");
