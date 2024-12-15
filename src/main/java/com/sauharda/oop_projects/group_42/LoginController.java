@@ -1,5 +1,7 @@
 package com.sauharda.oop_projects.group_42;
 
+import Abrar_tasin.Beneficiary;
+import Abrar_tasin.Donor;
 import Farha_Yesmin.Accountant;
 import Farha_Yesmin.FieldWorker;
 import Sauharda.CEO;
@@ -26,13 +28,17 @@ public class LoginController
     ArrayList<HRManager> hrManagerArrayList = new ArrayList<>();
     ArrayList<Accountant> accountantArrayList = new ArrayList<>();
     ArrayList<FieldWorker> fieldWorkerArrayList = new ArrayList<>();
+    ArrayList<Beneficiary> beneficiaryArrayList = new ArrayList<>();
+    ArrayList<Donor> donorArrayList = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
         ceoArrayList.add(new CEO("ceo1234", "CEO", "ceo@ngo.com"));
         hrManagerArrayList.add(new HRManager("HR Manager", "hrmanager@ngo.com", "hrmanager1234"));
         accountantArrayList.add(new Accountant("Accountant", "accountant@ngo.com", "accountant1234"));
-        fieldWorkerArrayList.add(new FieldWorker("fieldWorker", "fieldworker@ngo.com", "fieldworker1234"));
+        fieldWorkerArrayList.add(new FieldWorker("FieldWorker", "fieldworker@ngo.com", "fieldworker1234"));
+        beneficiaryArrayList.add(new Beneficiary("Beneficiary", "beneficiary@ngo.com", "beneficiary1234"));
+        donorArrayList.add(new Donor("Donor", "donor@ngo.com", "donor1234"));
 
     }
 
@@ -135,6 +141,46 @@ public class LoginController
                     Scene nextScene = new Scene(fxmlLoader.load());
 
                     stage.setTitle("Field Worker Dashboard");
+                    stage.setScene(nextScene);
+                    stage.show();
+                }
+                catch (Exception e) {
+                    //
+                }
+                return;
+            }
+        }
+
+        for (Beneficiary beneficiary : beneficiaryArrayList) {
+            if (beneficiary.getEmail().equalsIgnoreCase(email) && beneficiary.getPassword().equals(password)) {
+                try {
+                    Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+
+                    FXMLLoader fxmlLoader
+                            = new FXMLLoader(MainApplication.class.getResource("/Abrar_Tasin/BeneficiaryDashboard-view.fxml"));
+                    Scene nextScene = new Scene(fxmlLoader.load());
+
+                    stage.setTitle("Beneficiary Dashboard");
+                    stage.setScene(nextScene);
+                    stage.show();
+                }
+                catch (Exception e) {
+                    //
+                }
+                return;
+            }
+        }
+
+        for (Donor donor : donorArrayList) {
+            if (donor.getEmail().equalsIgnoreCase(email) && donor.getPassword().equals(password)) {
+                try {
+                    Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+
+                    FXMLLoader fxmlLoader
+                            = new FXMLLoader(MainApplication.class.getResource("/Abrar_Tasin/DonorDashboard-view.fxml"));
+                    Scene nextScene = new Scene(fxmlLoader.load());
+
+                    stage.setTitle("Donor Dashboard");
                     stage.setScene(nextScene);
                     stage.show();
                 }
