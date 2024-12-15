@@ -4,10 +4,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+import java.time.LocalDate;
 
 public class SignupController
 {
@@ -24,11 +27,45 @@ public class SignupController
 
     @javafx.fxml.FXML
     public void initialize() {
+<<<<<<< Updated upstream
         userTypeComboBox.getItems().addAll("CEO", "HR Manager", "Accountant", "Donor", "Field Worker", "Beneficiary", "Event Organiser", "Research Analyst");
+=======
+        userTypeComboBox.getItems().addAll("CEO", "Accountant", "HR Manager", "Field Worker", "Donor", "Beneficiary", "Event Organiser", "Research Analyst");
+>>>>>>> Stashed changes
     }
 
     @javafx.fxml.FXML
     public void signUpOnAction(ActionEvent actionEvent) {
+        if (emailOrPhoneTextField.getText().isEmpty()|| passwordPasswordField.getText().isBlank() || confirmPasswordPasswordField.getText().isEmpty() || userNameTextField.getText().isEmpty()){
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setContentText("Please fill up properly");
+            errorAlert.show();
+        } else if (passwordPasswordField.getText() != confirmPasswordPasswordField.getText()) {
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setContentText("Password did not match");
+            errorAlert.show();
+        }
+
+        else{
+            Alert confirmAlert = new Alert(Alert.AlertType.CONFIRMATION);
+            confirmAlert.setContentText("Signed Up Successfully");
+            confirmAlert.show();
+
+            try {
+                Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+
+                FXMLLoader fxmlLoader
+                        = new FXMLLoader(MainApplication.class.getResource("logIn.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+
+                stage.setTitle("Log In");
+                stage.setScene(nextScene);
+                stage.show();
+            }
+            catch (Exception e) {
+                //
+            }
+        }
         try {
             Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
 
