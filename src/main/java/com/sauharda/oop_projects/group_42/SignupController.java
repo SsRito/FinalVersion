@@ -27,11 +27,7 @@ public class SignupController
 
     @javafx.fxml.FXML
     public void initialize() {
-<<<<<<< Updated upstream
         userTypeComboBox.getItems().addAll("CEO", "HR Manager", "Accountant", "Donor", "Field Worker", "Beneficiary", "Event Organiser", "Research Analyst");
-=======
-        userTypeComboBox.getItems().addAll("CEO", "Accountant", "HR Manager", "Field Worker", "Donor", "Beneficiary", "Event Organiser", "Research Analyst");
->>>>>>> Stashed changes
     }
 
     @javafx.fxml.FXML
