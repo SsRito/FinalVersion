@@ -6,6 +6,12 @@ public class Beneficiary {
     public Beneficiary() {
     }
 
+    public Beneficiary(String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
     public String getName() {
         return name;
     }
@@ -39,3 +45,4 @@ public class Beneficiary {
                 '}';
     }
 }
+

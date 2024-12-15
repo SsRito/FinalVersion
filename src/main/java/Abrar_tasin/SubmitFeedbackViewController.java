@@ -1,6 +1,6 @@
 package Abrar_tasin;
 
-import com.tasin.ms4_member3.MainApplication;
+import com.sauharda.oop_projects.group_42.MainApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -59,9 +59,9 @@ public class SubmitFeedbackViewController
             confirmAlert.show();
         }
 
-        feedBackCategory.add(new feedBack(
+        //feedBackCategory.add(new feedBack(
                 
-        ));
+        //));
 
         FileWriter fw = null;
         File f = new File("feedback.txt");
@@ -76,6 +76,6 @@ public class SubmitFeedbackViewController
                 //
         }
         String str = "" ;
-        for(Feedback f: feed)
+        //for(Feedback f: feed)
     }
 }
