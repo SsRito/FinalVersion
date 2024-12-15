@@ -88,7 +88,7 @@
                </font>
             </Label>
             <Label fx:id="userNameLabel" layoutX="282.0" layoutY="14.0" prefHeight="17.0" prefWidth="150.0" />
-            <Label layoutX="282.0" layoutY="35.0" prefHeight="17.0" prefWidth="149.0" text="HR Manager" />
+            <Label fx:id="hrManagerLabel" layoutX="282.0" layoutY="35.0" prefHeight="17.0" prefWidth="149.0" />
             <Line endX="345.0" layoutX="108.0" layoutY="64.0" startX="-108.0" stroke="#b2dfdb" strokeWidth="3.0" />
             <Button layoutX="14.0" layoutY="79.0" mnemonicParsing="false" onAction="#reloadDashboardOnAction" prefHeight="37.0" prefWidth="180.0" style="-fx-background-color: #b2dfdb; -fx-border-color: white;" text="Reload Dashboard" textFill="#00796b">
                <font>

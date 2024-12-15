@@ -20,9 +20,13 @@ public class HrManagerDashboardController
     private Label userNameLabel;
     @javafx.fxml.FXML
     private Label goalLabel;
+    @javafx.fxml.FXML
+    private Label hrManagerLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
+        userNameLabel.setText("B");
+        hrManagerLabel.setText("HR Manager");
     }
 
     @javafx.fxml.FXML

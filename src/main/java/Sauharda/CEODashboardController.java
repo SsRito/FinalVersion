@@ -20,9 +20,13 @@ public class CEODashboardController
     private Label userNameLabel;
     @javafx.fxml.FXML
     private Label goalLabel;
+    @javafx.fxml.FXML
+    private Label designationLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
+        userNameLabel.setText("A");
+        designationLabel.setText("CEO");
     }
 
     @javafx.fxml.FXML

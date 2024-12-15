@@ -1,5 +1,6 @@
 package Farha_Yesmin;
 
+import Sauharda.CEOPlan;
 import com.sauharda.oop_projects.group_42.MainApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -180,9 +181,9 @@ public class AccountantDashboardViewController
             StringBuilder strBuilder = new StringBuilder();
             while (s.hasNextLine()) {
                 String str = s.nextLine();
-                //String[] tokens = str.split(",");
-                //CEOPlan c = new CEOPlan(tokens[0]);
-                //strBuilder.append(c.getGoal()).append("\n");
+                String[] tokens = str.split(",");
+                CEOPlan c = new CEOPlan(tokens[0]);
+                strBuilder.append(c.getGoal()).append("\n");
             }
             newGoalLabel.setText(strBuilder.toString());
         } catch (Exception e) {
