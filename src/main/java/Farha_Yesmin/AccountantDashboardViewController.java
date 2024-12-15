@@ -27,6 +27,7 @@ public class AccountantDashboardViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        accountantDesignationLabel.setText("Accountant");
     }
 
     @javafx.fxml.FXML
@@ -145,7 +146,7 @@ public class AccountantDashboardViewController
     @javafx.fxml.FXML
     public void signOutOnAction(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("login-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("login.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage currentStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
             currentStage.setTitle("Login Page");
