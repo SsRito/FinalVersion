@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Abrar_tasin.ReceiveUpdatesViewController">
+   <children>
+      <Label prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #64ffda;" text=" Receive Updates" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="347.0" mnemonicParsing="false" onAction="#goBackToDashboardOnAction" prefHeight="27.0" prefWidth="162.0" style="-fx-border-color: black; -fx-background-color: #fce4ec;" text="&lt;&lt; Go back to dashboard" textFill="#893f3f" />
+      <Label layoutX="23.0" layoutY="82.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #e0e0e0;" text="Receive updates about">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updatesAboutComboBox" layoutX="23.0" layoutY="129.0" prefWidth="150.0" />
+      <Label layoutX="23.0" layoutY="183.0" prefHeight="26.0" prefWidth="38.0" text="Email:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="221.0" prefHeight="26.0" prefWidth="103.0" text="Phone Number:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextField" layoutX="126.0" layoutY="184.0" />
+      <TextField fx:id="phoneNumberTextField" layoutX="126.0" layoutY="222.0" />
+      <Label layoutX="276.0" layoutY="82.0" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #e0e0e0;" text="Receive updates on">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updatesOnComboBox" layoutX="276.0" layoutY="129.0" prefWidth="150.0" />
+      <Button layoutX="23.0" layoutY="286.0" mnemonicParsing="false" onAction="#submitOnAction" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #fce4ec; -fx-border-color: black;" text="Submit" textFill="#893f3f" />
+   </children>
+</AnchorPane>

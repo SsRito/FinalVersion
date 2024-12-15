@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Abrar_tasin.SelectCauseViewController">
+   <children>
+      <Label prefHeight="83.0" prefWidth="600.0" style="-fx-background-color: #64ffda; -fx-border-color: #80cbc4; -fx-border-radius: 5; -fx-border-width: 3;" text=" Select a cause to support" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="106.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #e0e0e0;" text="Select a cause">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="causeComboBox" layoutX="23.0" layoutY="155.0" prefWidth="150.0" />
+      <TextField fx:id="causeLabel" layoutX="23.0" layoutY="247.0" prefHeight="62.0" prefWidth="560.0" />
+      <Label layoutX="23.0" layoutY="197.0" prefHeight="30.0" prefWidth="308.0" style="-fx-background-color: #e0e0e0;" text="Describe why you chose this cause to support">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="106.0" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #e0e0e0;" text="Enter Amount:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enterAmountTextField" layoutX="363.0" layoutY="109.0" />
+      <Button layoutX="23.0" layoutY="334.0" mnemonicParsing="false" onAction="#donateOnAction" prefHeight="39.0" prefWidth="99.0" style="-fx-background-color: #f8bbd0; -fx-border-color: Black;" text="Donate">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="133.0" layoutY="340.0" mnemonicParsing="false" onAction="#goBackToDashboardOnAction" prefHeight="27.0" prefWidth="158.0" style="-fx-border-color: black; -fx-background-color: #fce4ec;" text="&lt;&lt; Go back to dashboard" textFill="#893f3f" />
+   </children>
+</AnchorPane>

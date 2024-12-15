@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Abrar_tasin.SubscribeToNotificationsViewController">
+   <children>
+      <Label prefHeight="70.0" prefWidth="602.0" style="-fx-background-color: #64ffda;" text=" Subscribing to Notifications" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label layoutX="22.0" layoutY="101.0" prefHeight="55.0" prefWidth="502.0" style="-fx-background-color: #f48fb1;" text="Want to hear more from us? Subscribe for more and keep in touch with us!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="26.0" layoutY="302.0" mnemonicParsing="false" onAction="#subscribeOnAction" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #ba68c8;" text="Subscribe" textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="22.0" layoutY="174.0" prefHeight="23.0" prefWidth="43.0" text="Name: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="209.0" prefHeight="23.0" prefWidth="72.0" text="Contact No. ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="244.0" prefHeight="23.0" prefWidth="43.0" text="Email: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="93.0" layoutY="173.0" />
+      <TextField fx:id="contactField" layoutX="94.0" layoutY="208.0" />
+      <TextField fx:id="emailField" layoutX="94.0" layoutY="243.0" />
+      <Label layoutX="273.0" layoutY="172.0" prefHeight="26.0" prefWidth="298.0" style="-fx-background-color: #4fc3f7;" text="Your preferred notifications method to accept? ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="emailRadioButton" layoutX="273.0" layoutY="212.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="58.0" text="Email">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="callRadioButton" layoutX="273.0" layoutY="235.0" mnemonicParsing="false" text="Call">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="smsRadioButton" layoutX="273.0" layoutY="260.0" mnemonicParsing="false" text="SMS">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="401.0" layoutY="320.0" mnemonicParsing="false" onAction="#goBackToDashboardOnAction" prefHeight="27.0" prefWidth="162.0" style="-fx-border-color: black; -fx-background-color: #fce4ec;" text="&lt;&lt; Go back to dashboard" textFill="#893f3f" />
+   </children>
+</AnchorPane>
