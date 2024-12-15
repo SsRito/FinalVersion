@@ -20,7 +20,7 @@ public class SignupController
     @javafx.fxml.FXML
     private TextField userNameTextField;
     @javafx.fxml.FXML
-    private ComboBox userTypeComboBox;
+    private ComboBox<String> userTypeComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {
