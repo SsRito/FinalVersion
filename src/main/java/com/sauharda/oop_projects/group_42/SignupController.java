@@ -20,10 +20,11 @@ public class SignupController
     @javafx.fxml.FXML
     private TextField userNameTextField;
     @javafx.fxml.FXML
-    private ComboBox userTypeComboBox;
+    private ComboBox<String> userTypeComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {
+        userTypeComboBox.getItems().addAll("CEO", "HR Manager", "Accountant", "Donor", "Field Worker", "Beneficiary", "Event Organiser", "Research Analyst");
     }
 
     @javafx.fxml.FXML
