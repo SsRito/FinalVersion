@@ -32,6 +32,7 @@ public class NotificationController
 
     @javafx.fxml.FXML
     public void refreshNotificationButton(ActionEvent actionEvent) {
+        notificationTableView.getItems().clear();
         File f = new File("keyUpdateDetails.txt");
         try {
             Scanner s = new Scanner(f);

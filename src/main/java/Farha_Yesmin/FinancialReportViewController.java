@@ -94,26 +94,28 @@ public class FinancialReportViewController {
                 reportDatePicker.getValue(),
                 Float.parseFloat(donationAmountTextField.getText())
         ));
-        File f = new File("CourseInfo.bin");
+        File f = new File("donationaReport.bin");
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
-        try{
-            if (f.exists()){
-                fos = new FileOutputStream(f,true);
-                oos = new AppendableObjectOutputStream(fos);
-            }
-            else{
-                fos = new FileOutputStream(f);
-                oos = new ObjectOutputStream(fos);
-            }
-            for(FinancialReport c: donationList){
-                oos.writeObject(c);
-            }
-            oos.close();
-        }
-        catch (Exception e){
-            //
-        }
+//        try{
+//            if (f.exists()){
+//                fos = new FileOutputStream(f,true);
+//                oos = new AppendableObjectOutputStream(fos);
+//            }
+//            else{
+//                fos = new FileOutputStream(f);
+//                oos = new ObjectOutputStream(fos);
+//            }
+//            for(FinancialReport c: donationList){
+//                oos.writeObject(c);
+//            }
+//            oos.close();
+//        }
+//        catch (Exception e){
+//            //
+//        }
+//        dateRangeComboBox.setValue(null);
+//        donationAmountTextField.clear();
 
 
     }
@@ -126,25 +128,25 @@ public class FinancialReportViewController {
                 Float.parseFloat(expenseTextField.getText())
         ));
 
-//        FileWriter fw = null;
-//        File f = new File("donationReport.txt");
-//        try {
-//            if(f.exists()){
-//                fw = new FileWriter(f,true); //true means append
-//            }
-//            else{
-//                fw = new FileWriter(f); //by default false means new file add
-//            }
-//            String str = "";
-//            for(FinancialReport d: donationList){
-//                str += d.toString(toString());
-//            }
-//            fw.write(str);
-//            fw.close();
-//        }
-//        catch (Exception e) {
-//            //
-//        }
+        FileWriter fw = null;
+        File f = new File("MonthlyReport.txt");
+        try {
+            if(f.exists()){
+                fw = new FileWriter(f,true); //true means append
+            }
+            else{
+                fw = new FileWriter(f); //by default false means new file add
+            }
+            String str = "";
+            for(FinancialReport d: monthlyList){
+                str += d.toString("monthly");
+            }
+            fw.write(str);
+            fw.close();
+        }
+        catch (Exception e) {
+            //
+        }
     }
 
     @FXML

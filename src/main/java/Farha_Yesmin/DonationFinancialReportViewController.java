@@ -52,6 +52,24 @@ public class DonationFinancialReportViewController
 
     @javafx.fxml.FXML
     public void loadFinancialReportOnAction(ActionEvent actionEvent) {
+//        FileInputStream fis = null;
+//        ObjectInputStream ois = null;
+//        try{
+//            File f = new File("DonationReport.bin");
+//            if (f.exists()){
+//                fis = new FileInputStream(f);
+//            }
+//            else{
+//                //
+//            }
+//            ois = new ObjectInputStream(fis);
+//            while(true){
+//                donationFinancialReportTableView.getItems().add((FinancialReport) ois.readObject());
+//            }
+//        }
+//        catch (Exception e) {
+//            //
+//        }
 
 
 

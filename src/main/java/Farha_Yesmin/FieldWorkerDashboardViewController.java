@@ -90,6 +90,16 @@ public class FieldWorkerDashboardViewController
 
     @javafx.fxml.FXML
     public void quickNotesOnAction(ActionEvent actionEvent) {
+            try{
+                FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("/Farha_Yesmin/quickNotes-view.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage currentStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+                currentStage.setScene(nextScene);
+                currentStage.show();
+            }
+            catch(Exception e) {
+//
+            }
     }
 
     @javafx.fxml.FXML

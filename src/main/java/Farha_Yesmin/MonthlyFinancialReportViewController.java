@@ -54,7 +54,7 @@ public class MonthlyFinancialReportViewController
 
     @javafx.fxml.FXML
     public void loadFinancialReportOnAction(ActionEvent actionEvent) {
-        File f = new File("monthlyReport.txt");
+        File f = new File("MonthlyReport.txt");
         try{
             Scanner s = new Scanner(f);
             String str = "";
